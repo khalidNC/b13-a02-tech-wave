@@ -11,12 +11,10 @@
 }
 
 .btn {
-    background: linear-gradient(
-        47.64deg, 
-        rgba(247, 233, 63, 1), 
-        rgba(251, 9, 180, 1), 
-        rgba(145, 0, 248, 1)
-    );
+    background: linear-gradient(47.64deg,
+            rgba(247, 233, 63, 1),
+            rgba(251, 9, 180, 1),
+            rgba(145, 0, 248, 1));
     padding: 12px 24px;
     border: none;
     border-radius: 20px;
@@ -93,10 +91,31 @@ nav .hamburger {
     border-radius: 1000px;
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 
-    position: absolute;             /* absolute inside hero-circle */
-    top: 0;                         /* stick to top */
-    right: 0;                       /* stick to right */
-    transform: translate(-30%, 40%) /* Adjust overlap inside */
+    position: absolute;
+    /* absolute inside hero-circle */
+    top: 0;
+    /* stick to top */
+    right: 0;
+    /* stick to right */
+    transform: translate(-30%, 40%);
+    /* Adjust overlap inside */
+
+    animation: badgeGlow 2.8s ease-in-out infinite;
+}
+
+/* The badge animation with glowing the box-shadow */
+@keyframes badgeGlow {
+    0% {
+        box-shadow: 0 3px 20px rgba(0, 255, 136, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 3px 38px rgba(0, 255, 136, 0.85);
+    }
+
+    100% {
+        box-shadow: 0 3px 20px rgba(0, 255, 136, 0.4);
+    }
 }
 
 .hero-circle img {
@@ -166,6 +185,20 @@ nav .hamburger {
     background: transparent;
     border: 1px solid #00FF88;
     color: #00FF88;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+/* Hero section - subscription button hoover effect transition */
+.btn.btn-outline:hover {
+    background-color: yellowgreen;
+    color: #0b2b1c;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.45);
 }
 
 /* Small devices */
