@@ -203,6 +203,7 @@ nav .hamburger {
 
 /* Small devices */
 @media screen and (max-width: 576px) {
+    /* Nav section */
     nav {
         width: 100%;
         padding: 20px;
@@ -230,5 +231,41 @@ nav .hamburger {
     .logo img {
         width: 135px;
         height: auto;
+    }
+
+    /* hero section */
+    .hero-container {
+        padding: 48px 20px;
+        max-width: 100%;
+    }
+
+    .hero-circle {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-icon img {
+        width: 80px;
+    }
+
+    .hero-circle .badge {
+        font-size: 14px;
+        padding: 6px 12px;
+        transform: translate(-20%, 35%);
+    }
+
+    .hero-content .hero-heading p {
+        font-size: 14px;
+        white-space: normal;
+        padding: 0 10px;
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
     }
 }
