@@ -215,7 +215,6 @@ nav .hamburger {
     flex-direction: column;
     align-items: center;
     padding: 50px 0;
-    /* gap: 160px; */
 }
 
 .podcast-container .podcast-content {
@@ -235,8 +234,12 @@ nav .hamburger {
     line-height: 20px;
     padding-top: 16px;
     color: #FFFFFF;
-    opacity: 60%;
+    opacity: 40%;
     text-align: center;
+}
+
+.podcast-content p.last-line {
+    padding-top: 50px;
 }
 
 .podcast-container .divider {
@@ -257,7 +260,7 @@ nav .hamburger {
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-    padding-bottom: 120px;
+    padding: 30px 0 80px;
 }
 
 .podcast-rating .podcast-item .value {
@@ -274,7 +277,7 @@ nav .hamburger {
     line-height: 20px;
     padding-top: 16px;
     color: #FFFFFF;
-    opacity: 60%;
+    opacity: 40%;
     text-align: center;
     text-transform: uppercase;
 }
@@ -346,5 +349,48 @@ nav .hamburger {
 
     .hero-buttons .btn {
         width: 100%;
+    }
+
+    /* podcast */
+    .podcast .podcast-container {
+        padding-top: 10px;
+        width: 90%;
+    }
+
+    .podcast-container .podcast-content h2 {
+        font-size: 32px;
+    }
+
+    .podcast-container .podcast-content p {
+        line-height: 16px;
+        padding-top: 0;
+    }
+
+    .podcast-content p.last-line {
+        padding-top: 12px;
+    }
+
+    .podcast-container .divider {
+        margin: 10px 0;
+    }
+
+    /* Podcast rating items grid 2x2 */
+    .podcast-rating {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .podcast-rating .podcast-item .value {
+        font-size: 32px;
+        line-height: 16px;
+    }
+
+    .podcast-rating .podcast-item .label {
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 8px;
     }
 }
