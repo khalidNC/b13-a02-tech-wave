@@ -150,6 +150,7 @@ nav .hamburger {
 }
 
 .hero-content .hero-heading h1 {
+    padding-top: 40px;
     font-size: 60px;
     font-weight: 800;
     color: #FFFFFF;
