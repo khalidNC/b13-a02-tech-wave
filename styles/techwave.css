@@ -487,13 +487,8 @@ nav .hamburger {
         flex-direction: column;
         padding-bottom: 40px;
         gap: 16px;
-        width: 90%;
+        width: 80%;
     }
-
-    .option-card {
-        padding: 20px;
-    }
-
     .option-card-5 {
         margin-right: 0;
     }
