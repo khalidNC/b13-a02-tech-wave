@@ -60,6 +60,114 @@ nav .hamburger {
     display: none;
 }
 
+/* hero section style */
+.hero {
+    background-image: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-container {
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.hero-circle {
+    position: relative;
+    width: 350px;
+    height: 350px;
+}
+
+/* hero section > Badge new */
+.hero-circle .badge {
+    font: 18px;
+    font-weight: 600;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+
+    position: absolute;             /* absolute inside hero-circle */
+    top: 0;                         /* stick to top */
+    right: 0;                       /* stick to right */
+    transform: translate(-30%, 40%) /* Adjust overlap inside */
+}
+
+.hero-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-icon img {
+    width: 120px;
+    height: auto;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    gap: 24px;
+}
+
+.hero-content .hero-heading h1 {
+    font-size: 60px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+
+.hero-content .hero-heading p {
+    font-size: 16px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.hero-buttons {
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-buttons .btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    white-space: nowrap;
+}
+
+.hero-buttons .btn-outline {
+    background: transparent;
+    border: 1px solid #00FF88;
+    color: #00FF88;
+}
+
 /* Small devices */
 @media screen and (max-width: 576px) {
     nav {
