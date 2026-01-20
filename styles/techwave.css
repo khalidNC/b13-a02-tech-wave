@@ -473,4 +473,28 @@ nav .hamburger {
         line-height: 16px;
         padding-top: 8px;
     }
+
+    /* Choose techwave section */
+    .choose-techwave h2 {
+        font-size: 32px;
+        text-align: center;
+        padding: 40px 0 16px 0;
+        width: 100%;
+    }
+
+    .option-card-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        gap: 16px;
+        width: 90%;
+    }
+
+    .option-card {
+        padding: 20px;
+    }
+
+    .option-card-5 {
+        margin-right: 0;
+    }
 }
