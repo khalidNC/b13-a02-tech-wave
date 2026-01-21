@@ -287,7 +287,8 @@ nav .hamburger {
     background-color: #230E3D;
 }
 
-.choose-techwave h2, .option-card-container{
+.choose-techwave h2,
+.option-card-container {
     max-width: 1200px;
     width: 75%;
     margin: 0 auto;
@@ -343,7 +344,8 @@ nav .hamburger {
     align-content: center;
 }
 
-.option-card .option-icon, .option-head {
+.option-card .option-icon,
+.option-head {
     padding-bottom: 16px;
 }
 
@@ -362,9 +364,140 @@ nav .hamburger {
     color: rgba(255, 255, 255, .6);
 }
 
+/* Feature Episodes section */
+.feature-episodes {
+    background-color: #1A0B2E;
+    width: 100%;
+}
+
+.feature-card-container {
+    max-width: 1200px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 80px 0 120px 0;
+}
+
+.feature-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 24px;
+    background-color: #250D44;
+    margin-top: 40px;
+    overflow: hidden;
+    margin-bottom: 120px;
+}
+
+.time-count {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.feature-content {
+    padding: 24px;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.meet-the-host {
+    margin-top: 40px;
+}
+
+.host-cards {
+    background: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+}
+
+.host-card {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+}
+
+.host-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.social-icon {
+    border: 1px solid #533C72;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-card-container h2,
+h3,
+h4 {
+    color: #FFFFFF;
+}
+
+.feature-card-container h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: center;
+}
+
+.feature-card-container h3 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 39px;
+    text-align: left;
+}
+
+.feature-card-container h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: left;
+}
+
+.feature-card-container p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 
 /* Small devices */
 @media screen and (max-width: 576px) {
+
     /* Nav section */
     nav {
         width: 100%;
@@ -489,6 +622,7 @@ nav .hamburger {
         gap: 16px;
         width: 80%;
     }
+
     .option-card-5 {
         margin-right: 0;
     }
