@@ -626,4 +626,59 @@ h4 {
     .option-card-5 {
         margin-right: 0;
     }
+
+    /* Featured and host section */
+    .feature-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .feature-card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .feature-content {
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .meet-the-host {
+        margin-top: 30px;
+    }
+
+    .host-card {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .host-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .feature-card-container h2 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    .feature-card-container h3 {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 29px;
+        text-align: left;
+    }
 }
